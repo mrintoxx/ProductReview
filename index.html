@@ -16,7 +16,15 @@
   <body>
     <div class="card">
       <div class="card-img-holder image-fill">
-        <img src="images/image-product-desktop.jpg" alt="" />
+        <img
+          srcset="
+            images/image-product-desktop.jpg 600w,
+            images/image-product-mobile.jpg  686w
+          "
+          sizes="(max-width: 600px) 686px, 300px"
+          src="images/image-product-desktop.jpg"
+          alt="A bottle of perfume surrounded by foliage"
+        />
       </div>
       <div class="card-desc">
         <h3>Perfume</h3>
@@ -30,7 +38,9 @@
           <h2>$149.99</h2>
           <h5>$169.99</h5>
         </div>
-        <h2>Add to Cart</h2>
+        <h2 class="cart">
+          <a href="#"><img src="images/icon-cart.svg" alt="" /> Add to Cart</a>
+        </h2>
       </div>
     </div>
   </body>
